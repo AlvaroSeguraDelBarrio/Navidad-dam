@@ -3,6 +3,7 @@ package polonorte;
 
 public class Reno {
 
+	char presionar;
     private String nombre;
     private int velocidad;
 
@@ -24,8 +25,11 @@ public class Reno {
 
 
 	public String volar(String direccion){
-        System.out.println("Reno.volar");
-
+        if(presionar==1) {
+			System.out.println("Reno.volar");
+		}else {
+			System.out.println("Reno aterrizar");
+		}
         return "mmmmmiiiiii chus chus peeeeerrrr";
     }
 
